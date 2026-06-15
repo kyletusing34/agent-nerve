@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-nerve"
+version = "0.1.0"
+description = "Shared operational memory and coordination for mixed AI agent fleets."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Kyle Tusing" }
+]
+keywords = ["ai-agents", "claude-code", "codex", "coordination", "shared-memory"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development",
+]
+
+[project.scripts]
+agent-nerve = "agent_nerve.cli:main"
+
+[tool.setuptools]
+packages = ["agent_nerve"]
