@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: pypi
     permissions:
-      id-token: write
+      id-token: write    
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
 
@@ -26,3 +28,5 @@ jobs:
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/
