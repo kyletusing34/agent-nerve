@@ -1,5 +1,10 @@
 # Agent Nerve
 
+[![PyPI version](https://img.shields.io/pypi/v/agent-nerve.svg)](https://pypi.org/project/agent-nerve/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/kyletusing34/agent-nerve?style=social)](https://github.com/kyletusing34/agent-nerve/stargazers)
+
 `Agent Nerve` is a local-first shared operations layer for mixed agent fleets.
 
 It gives Claude Code, Codex, Hermes, and custom agents a small common place to:
@@ -11,6 +16,12 @@ It gives Claude Code, Codex, Hermes, and custom agents a small common place to:
 
 This is not a vector-memory product. It is an append-only coordination layer with
 task state, event history, and lease-based claims.
+
+## Install
+
+```bash
+pip install agent-nerve
+```
 
 ## Why it exists
 
